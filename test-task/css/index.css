@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+
+.header {
+    height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-image: url(../images/intro_01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 600;
+    color: #fff;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1800px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    position: relative;
+    right: 20%;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav ul li + li {
+    margin-left: 80px;
+}
+
+
+.matovoye-steklo {
+    /* color: #fff; */
+    display: flex;
+    flex-direction: column;
+    right: 60px;
+    top: 0;
+    padding-top: 15px;
+    cursor: pointer;
+    height: 100%;
+    box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.2);
+    border-radius: 3px;
+    position: fixed;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+  }
+  
+  .matovoye-steklo:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(221, 221, 221, 0.5);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.nav__left__menu ul {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nav__left__menu li {
+   padding: 30px 10px;
+   margin-bottom: 20px;
+   text-align: center;   
+   transition: all .5s;
+}
+
+.nav__left__menu li:hover {
+    background-color: rebeccapurple;
+    /* color: #585858; */
+    color: #fff;
+    background-color: #000000;
+}
+
+
+.sociable-media {
+    position: absolute;
+    bottom: 30px;
+    padding-left: 15px;
+}
+
+.sociable-media a + a {
+    margin-left: 30px;
+}
+
+.advantages {
+    padding-top: 180px;
+    padding-bottom: 190px;
+}
+
+.advantages__inner {
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.adv-item__titel {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 600;
+    margin-bottom: 90px;
+}
+
+.adv-item__text {
+    font-size: 40px;
+    line-height: 60px;
+    max-width: 1410px;
+    margin: 0 auto;
+}
+
+.advantages__slider {
+    margin-bottom: 170px;
+}
+
+.advantages__dots__slider {
+    max-width: 1600px;
+    width: 100%;
+    color: #5a5a5a;
+    font-size: 22px;
+    padding: 0 40px;
+}
+.advantages__dots__slider .slick-track {
+    transform: none !important;
+}
+
+
+.dots__box {
+    display: flex;
+}
+
+.dots__box__number {
+    margin-right: 25px;
+    border-right: 1px solid #5a5a5a;
+    padding-right: 15px;
+}
+
+.advantages__dots__slider .slick-current {
+    color: #000;
+    font-weight: 600;
+}
+
+.advantages__dots__slider .slick-current .dots__box__number {
+    border-right: 2px solid #000;
+}
+
+
+.products {
+    background-image: url(../images/itemsbg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 195px 0;
+}
+
+.products__inner {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.products__slider .slick-track {
+    display: flex;
+}
+
+.products__slider {
+    position: relative;
+}
+
+.item-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-product__item {
+    max-height: 700px;
+    max-width: 1300px;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 80px;
+    margin: 0 auto;
+   
+}
+
+.item__descr__titel {
+   color: #b28e49;
+   font-weight: 600;
+   font-size: 90px;
+   margin-bottom: 10px;
+
+}
+
+.item__descr__subtitel {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.item__descr__text {
+    font-size: 30px;
+    max-width: 576px;
+    line-height: 48px;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 30%;
+    top: 91%;
+}
+
+.arrow-right {
+    bottom: 5%;
+    margin-bottom: -4px;
+    right: 30%
+}
